@@ -10,43 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
 
     <style>
-
         *{
             margin:0;
             padding:0;
             box-sizing:border-box;
             font-family:Inter,sans-serif;
         }
-
         body{
             overflow:hidden;
             background:#e6e6e6;
         }
-
         canvas{
             display:block;
         }
+    #info{
+        position:absolute;
+        top:30px;
+        left:30px;
+        width:400px;
+        background:white;
 
-        #info{
-            position:absolute;
-            top:30px;
-            left:50%;
-            transform:translateX(-50%);
-            width:420px;
-            background:white;
-            border-radius:15px;
-            padding:20px;
-            box-shadow:0 10px 30px rgba(0,0,0,.15);
-            z-index:10;
+        border-radius:15px;
+        padding:20px;
+        box-shadow:0 10px 30px rgba(0,0,0,.15);
+        z-index:10;
+        
         }
-
         #carname{
             text-align:center;
             font-size:32px;
             font-weight:300;
             margin-bottom:10px;
         }
-
         #cardesc{
             text-align:center;
             color:#666;
@@ -59,7 +54,6 @@
             width:100%;
             border-collapse:collapse;
         }
-
         td{
             padding:8px 0;
             border-bottom:1px solid #ececec;
@@ -70,7 +64,6 @@
             text-align:right;
             font-weight:500;
         }
-
         #buttons{
             position:absolute;
             bottom:40px;
@@ -91,66 +84,50 @@
             transition:.2s;
             box-shadow:0 5px 15px rgba(0,0,0,.1);
         }
-
         button:hover{
             transform:translateY(-2px);
             background:#f2f2f2;
         }
-
     </style>
-
 </head>
 
 <body>
-
     <div id="info">
-
-        <h1 id="carname">Loading...</h1>
-
+        <h1 id="carname"></h1>
         <p id="cardesc"></p>
-
         <table>
 
             <tr>
                 <td>Engine</td>
                 <td id="engine"></td>
             </tr>
-
             <tr>
                 <td>Power</td>
                 <td id="power"></td>
             </tr>
-
             <tr>
                 <td>Top Speed</td>
                 <td id="topspeed"></td>
             </tr>
-
             <tr>
                 <td>0–100</td>
                 <td id="zerotohundred"></td>
             </tr>
-
-            
             <tr>
                 <td>Drive</td>
                 <td id="drivetrain"></td>
             </tr>
-
             <tr>
                 <td>Weight</td>
                 <td id="weight"></td>
             </tr>
 
         </table>
-
     </div>
-
     <div id="buttons">
         <button id="previous">Previous</button>
         <button id="next">Next</button>
     </div>
-
     <script type="module" src="/src/main.js"></script>
 
 </body>
