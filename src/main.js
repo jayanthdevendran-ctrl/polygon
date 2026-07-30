@@ -39,7 +39,7 @@ floor.position.y = -2.2;
 scene.add(floor);
 const models = [
     {
-        file: "/models/bmwe46.glb",
+        file: "/polygon/models/bmwe46.glb",
         scale: 1,
         name: "BMW M3 E46",
         descriptions: "One of the most iconic M cars ever, a need for speed icon that was the last naturally aspirated M3.",
@@ -53,7 +53,7 @@ const models = [
         }
     },
     {
-        file: "/models/clkgtr.glb",
+        file: "/polygon/models/clkgtr.glb",
         scale: 1,
         name: "Mercedes CLK GTR",
         descriptions: "A homologation special from the FIA GT championship, this car took off more than its designers meant for it to",
@@ -68,7 +68,7 @@ const models = [
 
     },
     {
-        file: "/models/mclarenlh.glb",
+        file: "/polygon/models/mclarenlh.glb",
         scale: 100,
         name: "McLaren MP4-23",
         descriptions: "Lewis Hamilton's 2008 championship winning car, known for brazil 2008's dramatic race.",
